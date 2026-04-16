@@ -1,0 +1,25 @@
+{
+  "name": "newbrightideas.com",
+  "version": "1.0.0",
+  "description": "Innovative solutions and bright ideas for the modern era.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "./node_modules/.bin/wrangler deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Product-Works Incorporated",
+  "license": "ISC",
+  "devDependencies": {
+    "@emnapi/core": "^1.9.2",
+    "@emnapi/runtime": "^1.9.2",
+    "vite": "^8.0.8",
+    "wrangler": "^4.82.1"
+  }
+}

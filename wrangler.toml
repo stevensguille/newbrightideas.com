@@ -1,0 +1,5 @@
+name = "pw-website"
+compatibility_date = "2024-04-12"
+
+[assets]
+directory = "dist"
