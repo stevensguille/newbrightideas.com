@@ -729,6 +729,36 @@ footer {
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
 }
 
+@media (max-width: 768px) {
+  :root {
+    --f-hero: clamp(42px, 11vw, 64px);
+    --f-2xl: 42px;
+    --f-xl: 32px;
+    --f-lg: 20px;
+  }
+  .wrap { padding: 0 20px; }
+  .nav-inner, .ticker-inner, .footer-top, .footer-bottom { padding-left: 20px; padding-right: 20px; }
+  .hero-hed { max-width: 100%; word-wrap: break-word; }
+  .hero-actions { flex-direction: column; }
+  .hero-manifesto { border-left: none; border-top: 3px solid var(--accent); padding: 24px 0 0 0; margin-top: 24px; align-self: flex-start; }
+  .btn-border { border-left: none; border-top: 1px solid var(--rule); }
+  .btn-solid, .btn-border { justify-content: center; text-align: center; }
+  .stats-row { grid-template-columns: 1fr; }
+  .stat { padding: 32px 20px; border-right: none; border-bottom: 1px solid var(--rule); }
+  .stat:last-child { border-bottom: none; }
+  #approach, #services, #work, #founder, #ambassador, #contact { padding: 64px 0; }
+  .svc { grid-template-columns: 48px 1fr; padding: 24px 0; }
+  .svc-name { padding-right: 0; }
+  .clients-inner { padding-right: 0; }
+  .clients-label { padding-right: 20px; border-right: none; border-bottom: 1px solid var(--rule); padding-bottom: 12px; margin-bottom: 12px; width: 100%; }
+  .client-names { padding-left: 0; gap: 12px; }
+  .contact-cta { flex-direction: column; gap: 12px; }
+  .contact-detail { flex-direction: column; gap: 4px; padding: 12px 0; }
+  .det-lbl { width: auto; margin-bottom: 4px; }
+  .det-val { word-wrap: break-word; word-break: break-all; }
+  .footer-bottom { flex-direction: column; gap: 20px; align-items: flex-start; }
+}
+
 /* ── ANTI-SCRAPING ──────────────────────────────────────────────────────── */
 .reversed-text {
     unicode-bidi: bidi-override;
